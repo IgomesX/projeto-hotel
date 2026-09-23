@@ -1,0 +1,1 @@
+O domínio do sistema é "Sistema de reservas de hotel".
