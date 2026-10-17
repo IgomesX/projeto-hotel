@@ -1,8 +1,8 @@
-interface Room{
+export interface Room{
     describe(): void;
 };
 
-interface Breakfast{
+export interface Breakfast{
     serve(): void;
 };
 
@@ -41,12 +41,12 @@ class SpecialBreakfast implements Breakfast{
     };
 };
 
-interface HostingFactory{
+export interface HostingFactory{
     createRoom(): Room;
     createBreakfast(): Breakfast;
 }
 
-class StandardFactory implements HostingFactory{
+export class StandardFactory implements HostingFactory{
     createRoom(): Room {
         return new StandardRoom;
     };
@@ -56,7 +56,7 @@ class StandardFactory implements HostingFactory{
     };
 }
 
-class PlusFactory implements HostingFactory{
+export class PlusFactory implements HostingFactory{
     createRoom(): Room {
       return new PlusRoom;  
     };
@@ -66,7 +66,7 @@ class PlusFactory implements HostingFactory{
     };
 }
 
-class LuxureFactory implements HostingFactory{
+export class LuxureFactory implements HostingFactory{
     createRoom(): Room {
         return new LuxureRoom;
     }
