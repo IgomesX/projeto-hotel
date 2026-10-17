@@ -3,7 +3,7 @@ import { ProcessPayment, Payment } from "./pagamentos";
 
 class Reservation{
     constructor(
-       public client: string,
+        public client: string,
         public entryDate: string,
         public departureDate: string,
         public nGuests: number,
